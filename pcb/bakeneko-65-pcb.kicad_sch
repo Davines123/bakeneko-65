@@ -1541,7 +1541,7 @@
     (stroke (width 0) (type default))
     (uuid e97b5984-9f0f-43a4-9b8a-838eef4cceb2)
   )
-  (wire (pts (xy 73.66 92.71) (xy 83.566 92.71))
+  (wire (pts (xy 73.66 92.71) (xy 93.726 92.71))
     (stroke (width 0) (type default))
     (uuid ef33b89e-0442-421b-a479-8f39b0de8a1f)
   )
@@ -1569,7 +1569,7 @@
     (stroke (width 0) (type default))
     (uuid fd3499d5-6fd2-49a4-bdb0-109cee899fde)
   )
-  (wire (pts (xy 76.2 97.79) (xy 73.66 97.79))
+  (wire (pts (xy 73.66 97.79) (xy 83.566 97.79))
     (stroke (width 0) (type default))
     (uuid fea7c5d1-76d6-41a0-b5e3-29889dbb8ce0)
   )
@@ -1762,6 +1762,13 @@
       (effects (font (size 1.27 1.27)) hide)
     )
   )
+  (global_label "ENC2B3" (shape input) (at 83.566 97.79 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 9b50d9e1-0fe7-4786-913c-c0a1e61e136a)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (id 0) (at 93.3512 97.79 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+  )
   (global_label "ROW2" (shape input) (at 76.2 163.83 0)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid a24ddb4f-c217-42ca-b6cb-d12da84fb2b9)
@@ -1830,6 +1837,13 @@
     (uuid ca5a4651-0d1d-441b-b17d-01518ef3b656)
     (property "Intersheetrefs" "${INTERSHEET_REFS}" (id 0) (at 0 0 0)
       (effects (font (size 1.27 1.27)) hide)
+    )
+  )
+  (global_label "ENC2B1" (shape input) (at 93.726 92.71 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid cb76badf-769f-4b4d-9a9c-87a20634b6b9)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (id 0) (at 103.5112 92.71 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
   (global_label "COL5" (shape input) (at 76.2 105.41 0)
@@ -2875,6 +2889,9 @@
     (path "/00000000-0000-0000-0000-00005f45b9b8/218c0461-a722-49ac-a0fc-c2dbfd9e14fa"
       (reference "#PWR0108") (unit 1) (value "GND") (footprint "")
     )
+    (path "/00000000-0000-0000-0000-00005f45b9b8/decb9a50-ebf1-4bf6-b136-6efaa0d1fa02"
+      (reference "#PWR0109") (unit 1) (value "GND") (footprint "")
+    )
     (path "/00000000-0000-0000-0000-00005f24d3a7"
       (reference "C1") (unit 1) (value "0.1u") (footprint "Capacitor_SMD:C_0805_2012Metric")
     )
@@ -2901,6 +2918,12 @@
     )
     (path "/00000000-0000-0000-0000-00005f45b9b8/df111daa-eb2a-4511-a33f-ca65510d8fca"
       (reference "C9") (unit 1) (value "100nf") (footprint "KeyboardParts:C_0805_2012Metric")
+    )
+    (path "/00000000-0000-0000-0000-00005f45b9b8/fc254a1e-32ac-4ee8-ac6b-48cb50599ba3"
+      (reference "C10") (unit 1) (value "100nf") (footprint "KeyboardParts:C_0805_2012Metric")
+    )
+    (path "/00000000-0000-0000-0000-00005f45b9b8/b32c302d-2fa9-4ee3-9d25-4c21ecbfeb2c"
+      (reference "C11") (unit 1) (value "100nf") (footprint "KeyboardParts:C_0805_2012Metric")
     )
     (path "/00000000-0000-0000-0000-00005f45b9b8/00000000-0000-0000-0000-00005f497530"
       (reference "D1") (unit 1) (value "1N4148") (footprint "KeyboardParts:D_SOD-123-Pretty")
@@ -3118,6 +3141,9 @@
     (path "/00000000-0000-0000-0000-00005f45b9b8/0063323e-f5d5-45a0-97a1-2313be038229"
       (reference "ENC1") (unit 1) (value "RotaryEncoder_Switch") (footprint "Rotary_Encoder:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm")
     )
+    (path "/00000000-0000-0000-0000-00005f45b9b8/6c07ca53-9324-43dd-a527-2b374a32b055"
+      (reference "ENC2") (unit 1) (value "RotaryEncoder_Switch") (footprint "Rotary_Encoder:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm")
+    )
     (path "/00000000-0000-0000-0000-00005f2505eb"
       (reference "F1") (unit 1) (value "500mA") (footprint "Fuse:Fuse_1206_3216Metric")
     )
@@ -3131,40 +3157,40 @@
       (reference "MX1") (unit 1) (value "1u") (footprint "MX_Alps_Hybrid:MX-1U-NoLED")
     )
     (path "/00000000-0000-0000-0000-00005f45b9b8/00000000-0000-0000-0000-00005f497526"
-      (reference "MX2") (unit 1) (value "1u") (footprint "MX_Alps_Hybrid:MX-1U-NoLED")
+      (reference "MX2") (unit 1) (value "1u") (footprint "Alps_Only:ALPS-1U")
     )
     (path "/00000000-0000-0000-0000-00005f45b9b8/00000000-0000-0000-0000-00005f497514"
-      (reference "MX3") (unit 1) (value "1u") (footprint "MX_Alps_Hybrid:MX-1U-NoLED")
+      (reference "MX3") (unit 1) (value "1u") (footprint "Alps_Only:ALPS-1U")
     )
     (path "/00000000-0000-0000-0000-00005f45b9b8/00000000-0000-0000-0000-00005f497502"
-      (reference "MX4") (unit 1) (value "1u") (footprint "MX_Alps_Hybrid:MX-1U-NoLED")
+      (reference "MX4") (unit 1) (value "1u") (footprint "Alps_Only:ALPS-1U")
     )
     (path "/00000000-0000-0000-0000-00005f45b9b8/00000000-0000-0000-0000-00005f49707d"
-      (reference "MX5") (unit 1) (value "1u") (footprint "MX_Alps_Hybrid:MX-1U-NoLED")
+      (reference "MX5") (unit 1) (value "1u") (footprint "Alps_Only:ALPS-1U")
     )
     (path "/00000000-0000-0000-0000-00005f45b9b8/00000000-0000-0000-0000-00005f4974e7"
-      (reference "MX6") (unit 1) (value "1u") (footprint "MX_Alps_Hybrid:MX-1U-NoLED")
+      (reference "MX6") (unit 1) (value "1u") (footprint "Alps_Only:ALPS-1U")
     )
     (path "/00000000-0000-0000-0000-00005f45b9b8/00000000-0000-0000-0000-00005f4974d5"
-      (reference "MX7") (unit 1) (value "1u") (footprint "MX_Alps_Hybrid:MX-1U-NoLED")
+      (reference "MX7") (unit 1) (value "1u") (footprint "Alps_Only:ALPS-1U")
     )
     (path "/00000000-0000-0000-0000-00005f45b9b8/00000000-0000-0000-0000-00005f4974c3"
-      (reference "MX8") (unit 1) (value "1u") (footprint "MX_Alps_Hybrid:MX-1U-NoLED")
+      (reference "MX8") (unit 1) (value "1u") (footprint "Alps_Only:ALPS-1U")
     )
     (path "/00000000-0000-0000-0000-00005f45b9b8/00000000-0000-0000-0000-00005f4974b1"
-      (reference "MX9") (unit 1) (value "1u") (footprint "MX_Alps_Hybrid:MX-1U-NoLED")
+      (reference "MX9") (unit 1) (value "1u") (footprint "Alps_Only:ALPS-1U")
     )
     (path "/00000000-0000-0000-0000-00005f45b9b8/00000000-0000-0000-0000-00005f49749f"
-      (reference "MX10") (unit 1) (value "1u") (footprint "MX_Alps_Hybrid:MX-1U-NoLED")
+      (reference "MX10") (unit 1) (value "1u") (footprint "Alps_Only:ALPS-1U")
     )
     (path "/00000000-0000-0000-0000-00005f45b9b8/00000000-0000-0000-0000-00005f49748d"
-      (reference "MX11") (unit 1) (value "1u") (footprint "MX_Alps_Hybrid:MX-1U-NoLED")
+      (reference "MX11") (unit 1) (value "1u") (footprint "Alps_Only:ALPS-1U")
     )
     (path "/00000000-0000-0000-0000-00005f45b9b8/00000000-0000-0000-0000-00005f49747b"
-      (reference "MX12") (unit 1) (value "1u") (footprint "MX_Alps_Hybrid:MX-1U-NoLED")
+      (reference "MX12") (unit 1) (value "1u") (footprint "Alps_Only:ALPS-1U")
     )
     (path "/00000000-0000-0000-0000-00005f45b9b8/00000000-0000-0000-0000-00005f497469"
-      (reference "MX13") (unit 1) (value "1u") (footprint "MX_Alps_Hybrid:MX-1U-NoLED")
+      (reference "MX13") (unit 1) (value "1u") (footprint "Alps_Only:ALPS-1U")
     )
     (path "/00000000-0000-0000-0000-00005f45b9b8/00000000-0000-0000-0000-00005f497457"
       (reference "MX14") (unit 1) (value "1u") (footprint "MX_Alps_Hybrid:MX-1U-NoLED")
@@ -3221,7 +3247,7 @@
       (reference "MX31") (unit 1) (value "1.5u") (footprint "MX_Alps_Hybrid:MX-1.5U-NoLED")
     )
     (path "/00000000-0000-0000-0000-00005f45b9b8/00000000-0000-0000-0000-00005f49733a"
-      (reference "MX32") (unit 1) (value "1u") (footprint "MX_Alps_Hybrid:MX-1U-NoLED")
+      (reference "MX32") (unit 1) (value "1u") (footprint "MX_Only:MXOnly-1U-NoLED")
     )
     (path "/00000000-0000-0000-0000-00005f45b9b8/00000000-0000-0000-0000-00005f4970ab"
       (reference "MX33") (unit 1) (value "1.25u") (footprint "MX_Alps_Hybrid:MX-1.25U-NoLED")
@@ -3390,6 +3416,9 @@
     )
     (path "/00000000-0000-0000-0000-00005f45b9b8/016f93f4-8567-4399-9008-f569dbad5501"
       (reference "MX88") (unit 1) (value "2.75u") (footprint "MX_Alps_Hybrid:MX-2.75U-NoLED")
+    )
+    (path "/00000000-0000-0000-0000-00005f45b9b8/dd9ca97c-7902-4f93-9a15-fc18666b79eb"
+      (reference "MX89") (unit 1) (value "1.5u") (footprint "MX_Alps_Hybrid:MX-1.5U-NoLED")
     )
     (path "/00000000-0000-0000-0000-00005f27cfdf"
       (reference "R1") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0805_2012Metric")
